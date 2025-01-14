@@ -1,1 +1,96 @@
-primer
+\documentclass[a4paper]{article}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{indentfirst}
+
+\graphicspath{{./angem/}}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\B}{\mathfrak{B}}
+\newcommand{\Bo}{\mathring{B}}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\lra}{\Leftrightarrow}
+\newcommand{\xn}{\{x_n\}_{n = 1}^{\infty}}
+\renewcommand{\div}{\mid}
+\newcommand{\ndiv}{\nmid}
+\newcommand{\om}{\bar{\bar{o}}}
+\newcommand\tab[1][.5cm]{\hspace*{#1}}
+
+\newcommand{\lims}{\lim\limits_{n\to \infty}}
+\renewcommand{\liminf}{\lim\limits_{x\to \infty}}
+\newcommand{\liminfp}{\lim\limits_{x\to +\infty}}
+\newcommand{\liminfm}{\lim\limits_{x\to -\infty}}
+\newcommand{\lima}{\lim\limits_{x\to a}}
+\newcommand{\limo}{\lim\limits_{x\to 0}}
+
+\newcommand{\nl}{\newline}
+
+\newcounter{concount}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{corollary}{Следствие}[theorem]
+\newtheorem{statement}{Утверждение}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[section]
+\newtheorem{example}{Пример}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Замечание}[section]
+
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE \bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolor{linkcolor}{HTML}{225ae2}
+\definecolor{urlcolor}{HTML}{225ae2}
+\hypersetup{
+    pdfstartview=FitH, 
+    linkcolor=linkcolor,
+    urlcolor=urlcolor,
+    colorlinks=true
+}
+
+\usetikzlibrary{calc}
+\righthyphenmin=2 % разрешает перенос с двумя буквами на новой строке
+
+
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+\title{Методичка по проективной геометрии}
+\author{Светлаков Ярослав}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Билет 56}
+\begin{definition}
+    Преобразованием векторного пространства называется биективное отображение этого пространства на себя.
+\end{definition}
+\begin{definition}
+    Отображение $f : V \to V$ называется линейным преобразованием векторного пространства $V$, если существуют базисы $\bar{e_1}$,...,$\bar{e_n}$ и $\bar{e'_1}$,...,$\bar{e'_n}$ такие, что образ $f(\bar{v})$ любого вектора $\bar{v}$ из $V$ имеет в базисе $\bar{e_1}$,...,$\bar{e_n}$ те же координаты, что и сам вектор $\bar{v}$ в базисе $\bar{e'_1}$,...,$\bar{e'_n}$. Базисы $\bar{e_1}$,...,$\bar{e_n}$ и $\bar{e'_1}$,...,$\bar{e'_n}$ называются ассоциированными с $f$.
+\end{difinition}
+\end{document}
